@@ -1,0 +1,40 @@
+.highlight-blue{
+    display: inline-block;
+    padding: .25em 0.5em;
+    width: 20em;
+    background-color: #3f91ce;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+.circle {
+    border: 3px solid #FFC107;
+    border-radius: 50%;
+    background-color: #FFC107;
+    width: 50px !important;
+    height: auto;
+}
+
+.kinfo{
+    padding-left: 0.5vw !important; 
+    padding-top: 1.6vh !important;
+}
+
+h2{
+    font-size: 150%;
+}
+
+@media screen and (max-width: 990px) {
+    .mcenter{
+        justify-content: center;
+    }
+    .highlight-blue{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .mcenter{
+        justify-content:start;
+    }
+}

@@ -1,0 +1,512 @@
+@font-face {
+    font-family: "Lexend";
+    src: url("/fonts/Lexend-Regular.ttf");
+}
+
+*{
+    font-family: "Lexend" !important;
+}
+
+body{
+    background-color: #efeded;
+}
+
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -100px;
+    padding-bottom: 100px;
+}
+
+.footer {
+    background-image: url("/svg/footer_footer.svg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;    
+}
+
+.kapcsolat {
+    flex-direction: column;
+}
+
+.kapcsolat p{
+    margin: 0;
+}
+
+.row img{
+    width: 120px;
+}
+
+.footer_left p {
+    color: #fff;
+    font-size: 90%;
+    margin: 0;
+    
+}
+
+.pt-20{
+    padding-top: 20vh;
+}
+
+li { cursor: pointer; }
+
+.footerinfo p{
+    font-size: 90%;
+    color: #fff;
+}
+
+.footer_icon img{
+    height: 10%;
+    width: 10%;
+}
+
+.footerinfo p{
+    margin: 0 !important;
+}
+
+.footerinfo {
+    padding-left: 15vw !important; 
+}
+
+.active{
+    text-decoration: underline;
+}
+
+/* Custom CSS to style the social icons */
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: 1.3rem; /* Adjust the spacing between icons */
+}
+.navbar-nav .nav-link {
+    color: #fff !important; /* Set the text color to white */
+}
+
+nav{
+    padding-top: 0 !important;
+}
+
+nav .container-fluid{ 
+    background-image: url("/svg/nav_web.svg");
+    background-size: cover;
+    background-position: center center;
+    top: 0; /* Position the navbar at the top of the page */
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 45px;
+    height: 100%;
+
+}
+
+nav ul{
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 5px;
+}
+
+nav ul a{
+    color: #fff;
+    margin-bottom: 0.5em;
+    padding-top: 15px;
+    font-size: 110%;
+    text-decoration: none;
+}
+
+.navbar-brand img{
+    width: 160px;
+    height: 25%;
+
+    margin-left: 2em;
+    padding-top: 10px;
+}
+
+
+.kayak{
+    background: url("/img/fooldali.jpg");
+    height: 100vh;
+    background-size: cover, cover;   
+    display: flex; 
+}
+
+.kayak h1{
+    font-size: 3vw !important;
+}
+
+.kayak-text{
+    margin-top: 30vh;
+    color: #fff;
+    width: 50vw !important;
+    margin-left: 7vw;
+    
+}
+
+.kayak button{
+    width: 10vw;
+    font-size: 1vw;
+}
+
+.btn {
+    background-color: #fcbd2b;
+    color: #fff;
+    border: 0;
+}
+
+.martb{
+    margin-left: 0 !important;
+}
+
+.titleh h2 {
+    color: #3f92d0;
+    font-size: 4vw;
+    font-weight: bold;
+    margin-top: 10vh;
+    margin-left: 7vw;
+    margin-bottom: 0em;
+    margin-block-end: 0;
+}
+
+.titleh h1 {
+    color: #3f92d0;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-left: 12vw;
+    margin-bottom: 0em;
+    margin-block-end: 0;
+}
+
+.reszletek-hullam{
+    background-image: url("/svg/hullam_feher-04.svg");
+    background-repeat: no-repeat;
+    width: 60vw;
+}
+
+.sargahullam img{
+    width: 40vw;
+    margin-top: -2vh;
+    margin-left: 19vw;
+}
+
+.csomag{
+    width: 350px;
+    height: 250px;
+    background-size: cover;
+    margin: 1vw;
+    background-position: 0 -20px;
+    background-repeat: no-repeat;
+}
+
+.csomag h3{
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.ajanlatkeres {
+    background-color: #fcbd2b;
+    color: white;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.sztitle{
+    font-size: 1.4em;
+    color: white;
+    background-color: #fcbd2b;
+    padding: 0.4em 0.4em 0.4em 0.4em;
+}
+
+input[type="date"]{
+    background-color: #3f91ce;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    font-family: "Roboto Mono",monospace;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.ajanlker{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    color: #3f92d0;
+}
+
+.felhivas{
+    background-color: rgb(211, 48, 48);
+    color: white;
+    padding-left: 1em;
+    padding-top: 0.2em;
+}
+
+.btna{
+    color: black;
+    border: none;
+    height: 40px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+
+
+.pointer{
+    cursor:pointer;
+  }
+
+.fa {
+    display: inline !important;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-family: FontAwesome !important;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.reszletek{
+    margin-left: 20vw;
+}
+
+.szallasimg img{
+    width: 120px;
+    height: auto;
+    background-color: white;
+}
+
+.szallasimg img:hover{
+    background-color: #3f91ce;
+}
+
+.selected{
+    background-color: #3f91ce !important;
+}
+
+.image-grid{
+    max-width: 1100px;
+
+}
+
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery .image{
+    padding: 7px;
+    width: calc(100% / 3);
+  }
+  .gallery .image span{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  .gallery .image img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+  }
+  .gallery .image:hover img{
+    transform: scale(1.1);
+  }
+  .main-category-grid {
+    margin-top: 20px;
+}
+
+.main-category {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #3f91ce;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.main-category:hover {
+    background-color: #6dacdb;
+    transform: scale(1.05);
+}
+
+.sub-category-grid {
+    margin-top: 20px;
+}
+
+.sub-category {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fcbd2b;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.sub-category:hover {
+    background-color: #fdd578;
+    transform: scale(1.05);
+}
+@media(max-width: 1000px){
+    .gallery .image{
+        width: calc(100% / 2);
+    }
+}
+@media(max-width: 600px){
+    .gallery .image{
+        width: 100%;
+        padding: 4px;
+    }
+}
+@media (hover: none) {
+    .szallasimg img:hover{
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    nav ul a{
+        font-size: 85% !important;
+        
+    }
+    .social-icon{
+        font-size: 90% !important;
+        margin-left: 1rem; /* Adjust the spacing between icons */
+
+    }
+    nav .container-fluid .collapsing{ 
+        padding-bottom: 170px;
+    }
+    nav .container-fluid .show{ 
+        padding-bottom: 170px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    nav .container-fluid .collapsing{ 
+        padding-bottom: 170px;
+    }
+    nav .container-fluid .show{ 
+        padding-bottom: 170px;
+    }
+    .center-logo{
+        width: 100%;
+        height: 100%;
+        display: flex;    
+        justify-content: space-between;
+    }
+
+    .navbar-brand img{
+        height: 100%;
+    }
+
+    .kayak{
+        background: url("/img/fooldali_crop.jpg");
+        height: 100vh;
+        background-size: cover, cover;
+        background-repeat: no-repeat;
+    }
+    .kayak h1{
+        font-size: 4vw !important;
+    }
+    .titleh h1{
+        font-size: 3rem;
+    }
+    .reszletek{
+        padding-left: 100px;
+        padding-bottom: 40px;
+    }
+    .reszletek button{
+        width: 130px;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .kayak{
+        background: url("/img/proba.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        height: 70vh;
+
+    }
+    .kayak h1{
+        font-size: 5vw !important;
+    }
+
+    .kayak button{
+        width: 13vw;
+        font-size: 1.5vw;
+    }
+
+    .kayak-text h1{
+        font-size: 1.5rem !important;
+        width: 80vw !important;
+    }
+
+    .titleh h2{
+        font-size: 2rem;
+    }
+
+    .titleh h1{
+        font-size: 10vw;
+        margin-left: 0;
+    }
+    .reszletek{
+        padding-left: 40px;
+    }
+    .reszletek button{
+        width: 80px;
+        font-size: 0.5em;
+    }
+} 
