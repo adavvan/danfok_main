@@ -20,7 +20,7 @@
                         <span class="post-date">
                             {{$article->created_at}} 
                         </span>
-                        <a href="" class="details">Bővebben...</a> 
+                        <a href="{{ route('guest.hir', $article->id) }}" class="details">Bővebben...</a> 
                     </div>
                 </div>  
             </div>

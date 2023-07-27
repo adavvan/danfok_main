@@ -14,8 +14,17 @@ class GuestArticleController extends Controller
         return view('guest.hirek', compact('articles'));
     }
 
-    public function singleArticle(Article $article)
+    public function singleArticle($id)
     {
-        return view('guest.hir', compact('article'));
+        $article = Article::find($id);
+
+        if ($article) 
+        {
+            return view('guest.hir', compact('article'));
+        } 
+        else 
+        {
+            abort(404);
+    }
     }
 }

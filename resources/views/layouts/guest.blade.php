@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'Dánfok')</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="{{ asset('css/styles.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
@@ -15,7 +15,7 @@
                     <div class="container-fluid">
                         <!-- Logo -->
                         <a class="navbar-brand" href="/">
-                            <img src="svg/logo-white.svg" alt="Logo">
+                            <img src="{{ asset('svg/logo-white.svg') }}" alt="Logo">
                         </a>
             
                         <!-- Hamburger Icon for Mobile (Top Right) -->
@@ -70,7 +70,7 @@
         <div class="row pt-5">
                 <div class="col-12 col-md-6 footer_left d-flex justify-content-center pb-5">
                         <div>
-                                <img src="svg/logo-white.svg">
+                                <img src="{{ asset('svg/logo-white.svg') }}">
                                 <p>Minden jog fenntartva! © 2023.</p>
                                 <p>Szálláshely típusa: Közösségi szálláshely <br>NTAK regisztracios szám: KO241001192</p>
                         </div>
@@ -81,18 +81,18 @@
                                 <div class="footerinfo">
                                         <div class="kapcsolat ">
                                                 <p>Kapcsolat</p>
-                                                <img src="svg/small_wave.svg">
+                                                <img src="{{ asset('svg/small_wave.svg') }}">
                                         </div>
                                         <div class="footer_icon d-flex align-items-center">
-                                                <img src="img/footer_icon_phone.png">
+                                                <img src="{{ asset('img/footer_icon_phone.png') }}">
                                                 <p>+36 20 592 5636</p>
                                         </div>
                                         <div class="footer_icon d-flex align-items-center">        
-                                                <img src="img/footer_icon_email.png">
+                                                <img src="{{ asset('img/footer_icon_email.png') }}">
                                                 <p>udulokozpont@gmail.com</p>
                                         </div>
                                         <div class="footer_icon d-flex align-items-center">   
-                                                <img src="img/footer_icon_adress.png">    
+                                                <img src="{{ asset('img/footer_icon_adress.png') }}" >    
                                                 <p>Békés, Hrsz. 6929/50, 5630</p>
                                         </div>
                                 </div>
