@@ -1,13 +1,15 @@
+/* Fonts */
 @font-face {
     font-family: "Lexend";
     src: url("/fonts/Lexend-Regular.ttf");
 }
 
-*{
+* {
     font-family: "Lexend" !important;
 }
 
-body{
+/* Global Styles */
+body {
     background-color: #efeded;
 }
 
@@ -21,23 +23,24 @@ html, body {
     padding-bottom: 100px;
 }
 
+/* Footer Styles */
 .footer {
     background-image: url("/svg/footer_footer.svg");
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
-    width: 100%;    
+    width: 100%;
 }
 
 .kapcsolat {
     flex-direction: column;
 }
 
-.kapcsolat p{
+.kapcsolat p {
     margin: 0;
 }
 
-.row img{
+.row img {
     width: 120px;
 }
 
@@ -45,38 +48,39 @@ html, body {
     color: #fff;
     font-size: 90%;
     margin: 0;
-    
 }
 
-.pt-20{
+.pt-20 {
     padding-top: 20vh;
 }
 
-li { cursor: pointer; }
+li {
+    cursor: pointer;
+}
 
-.footerinfo p{
+.footerinfo p {
     font-size: 90%;
     color: #fff;
 }
 
-.footer_icon img{
+.footer_icon img {
     height: 10%;
     width: 10%;
 }
 
-.footerinfo p{
+.footerinfo p {
     margin: 0 !important;
 }
 
 .footerinfo {
-    padding-left: 15vw !important; 
+    padding-left: 15vw !important;
 }
 
-.active{
+.active {
     text-decoration: underline;
 }
 
-/* Custom CSS to style the social icons */
+/* Navigation Styles */
 .social-icons {
     display: flex;
     align-items: center;
@@ -87,15 +91,16 @@ li { cursor: pointer; }
     color: #fff;
     margin-left: 1.3rem; /* Adjust the spacing between icons */
 }
+
 .navbar-nav .nav-link {
     color: #fff !important; /* Set the text color to white */
 }
 
-nav{
+nav {
     padding-top: 0 !important;
 }
 
-nav .container-fluid{ 
+nav .container-fluid {
     background-image: url("/svg/nav_web.svg");
     background-size: cover;
     background-position: center center;
@@ -104,16 +109,15 @@ nav .container-fluid{
     width: 100%;
     padding-bottom: 45px;
     height: 100%;
-
 }
 
-nav ul{
+nav ul {
     margin-top: auto;
     margin-bottom: auto;
     padding-top: 5px;
 }
 
-nav ul a{
+nav ul a {
     color: #fff;
     margin-bottom: 0.5em;
     padding-top: 15px;
@@ -121,35 +125,33 @@ nav ul a{
     text-decoration: none;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 160px;
     height: 25%;
-
     margin-left: 2em;
     padding-top: 10px;
 }
 
-
-.kayak{
+/* Kayak Section Styles */
+.kayak {
     background: url("/img/fooldali.jpg");
     height: 100vh;
-    background-size: cover, cover;   
-    display: flex; 
+    background-size: cover, cover;
+    display: flex;
 }
 
-.kayak h1{
+.kayak h1 {
     font-size: 3vw !important;
 }
 
-.kayak-text{
+.kayak-text {
     margin-top: 30vh;
     color: #fff;
     width: 50vw !important;
     margin-left: 7vw;
-    
 }
 
-.kayak button{
+.kayak button {
     width: 10vw;
     font-size: 1vw;
 }
@@ -160,7 +162,8 @@ nav ul a{
     border: 0;
 }
 
-.martb{
+/* Title and Details Section Styles */
+.martb {
     margin-left: 0 !important;
 }
 
@@ -183,19 +186,19 @@ nav ul a{
     margin-block-end: 0;
 }
 
-.reszletek-hullam{
+.reszletek-hullam {
     background-image: url("/svg/hullam_feher-04.svg");
     background-repeat: no-repeat;
     width: 60vw;
 }
 
-.sargahullam img{
+.sargahullam img {
     width: 40vw;
     margin-top: -2vh;
     margin-left: 19vw;
 }
 
-.csomag{
+.csomag {
     width: 350px;
     height: 250px;
     background-size: cover;
@@ -204,7 +207,7 @@ nav ul a{
     background-repeat: no-repeat;
 }
 
-.csomag h3{
+.csomag h3 {
     color: #fff;
     padding-bottom: 15px;
 }
@@ -216,47 +219,48 @@ nav ul a{
     padding-bottom: 2vh;
 }
 
-.sztitle{
+.sztitle {
     font-size: 1.4em;
     color: white;
     background-color: #fcbd2b;
     padding: 0.4em 0.4em 0.4em 0.4em;
 }
 
-input[type="date"]{
+input[type="date"] {
     background-color: #3f91ce;
     padding: 15px;
     top: 50%;
     left: 50%;
-    font-family: "Roboto Mono",monospace;
+    font-family: "Roboto Mono", monospace;
     color: #ffffff;
     font-size: 18px;
     border: none;
     outline: none;
     border-radius: 5px;
 }
-::-webkit-calendar-picker-indicator{
+
+::-webkit-calendar-picker-indicator {
     background-color: #ffffff;
     padding: 5px;
     cursor: pointer;
     border-radius: 3px;
 }
 
-.ajanlker{
+.ajanlker {
     padding-top: 5vh;
     padding-bottom: 5vh;
     text-align: center;
     color: #3f92d0;
 }
 
-.felhivas{
+.felhivas {
     background-color: rgb(211, 48, 48);
     color: white;
     padding-left: 1em;
     padding-top: 0.2em;
 }
 
-.btna{
+.btna {
     color: black;
     border: none;
     height: 40px;
@@ -264,12 +268,11 @@ input[type="date"]{
     border-radius: 15px;
 }
 
+.pointer {
+    cursor: pointer;
+}
 
-
-.pointer{
-    cursor:pointer;
-  }
-
+/* Social Icons */
 .fa {
     display: inline !important;
     padding: 20px;
@@ -279,86 +282,92 @@ input[type="date"]{
     text-decoration: none;
     font-family: FontAwesome !important;
 }
+
 .fa:hover {
     opacity: 0.7;
 }
 
 .fa-facebook {
-  background: #3B5998;
-  color: white;
+    background: #3B5998;
+    color: white;
 }
 
 .fa-twitter {
-  background: #55ACEE;
-  color: white;
+    background: #55ACEE;
+    color: white;
 }
 
 .fa-google {
-  background: #dd4b39;
-  color: white;
+    background: #dd4b39;
+    color: white;
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+    background: #007bb5;
+    color: white;
 }
 
 .fa-youtube {
-  background: #bb0000;
-  color: white;
+    background: #bb0000;
+    color: white;
 }
 
 .fa-instagram {
-  background: #125688;
-  color: white;
+    background: #125688;
+    color: white;
 }
 
-.reszletek{
+/* Image Gallery Styles */
+.reszletek {
     margin-left: 20vw;
 }
 
-.szallasimg img{
+.szallasimg img {
     width: 120px;
     height: auto;
     background-color: white;
 }
 
-.szallasimg img:hover{
+.szallasimg img:hover {
     background-color: #3f91ce;
 }
 
-.selected{
+.selected {
     background-color: #3f91ce !important;
 }
 
-.image-grid{
+.image-grid {
     max-width: 1100px;
-
 }
 
-
-.gallery{
+.gallery {
     display: flex;
     flex-wrap: wrap;
-  }
-  .gallery .image{
+}
+
+.gallery .image {
     padding: 7px;
     width: calc(100% / 3);
-  }
-  .gallery .image span{
+}
+
+.gallery .image span {
     display: flex;
     width: 100%;
     overflow: hidden;
-  }
-  .gallery .image img{
+}
+
+.gallery .image img {
     width: 100%;
     vertical-align: middle;
     transition: all 0.3s ease;
-  }
-  .gallery .image:hover img{
+}
+
+.gallery .image:hover img {
     transform: scale(1.1);
-  }
-  .main-category-grid {
+}
+
+/* Main and Sub Category Styles */
+.main-category-grid {
     margin-top: 20px;
 }
 
@@ -395,118 +404,158 @@ input[type="date"]{
     background-color: #fdd578;
     transform: scale(1.05);
 }
-@media(max-width: 1000px){
-    .gallery .image{
+
+/* Media Queries */
+@media (max-width: 1000px) {
+    .gallery .image {
         width: calc(100% / 2);
     }
 }
-@media(max-width: 600px){
-    .gallery .image{
+
+@media (max-width: 600px) {
+    .gallery .image {
         width: 100%;
         padding: 4px;
     }
 }
+
 @media (hover: none) {
-    .szallasimg img:hover{
+    .szallasimg img:hover {
         background-color: white;
     }
 }
 
 @media screen and (max-width: 1140px) {
-    nav ul a{
+    nav ul a {
         font-size: 85% !important;
-        
     }
-    .social-icon{
+
+    .social-icon {
         font-size: 90% !important;
         margin-left: 1rem; /* Adjust the spacing between icons */
-
     }
-    nav .container-fluid .collapsing{ 
+
+    nav .container-fluid .collapsing {
         padding-bottom: 170px;
     }
-    nav .container-fluid .show{ 
+
+    nav .container-fluid .show {
         padding-bottom: 170px;
     }
 }
 
 @media screen and (max-width: 990px) {
-    nav .container-fluid .collapsing{ 
+    nav .container-fluid .collapsing {
         padding-bottom: 170px;
     }
-    nav .container-fluid .show{ 
+
+    nav .container-fluid .show {
         padding-bottom: 170px;
     }
-    .center-logo{
+
+    .center-logo {
         width: 100%;
         height: 100%;
-        display: flex;    
+        display: flex;
         justify-content: space-between;
     }
 
-    .navbar-brand img{
+    .navbar-brand img {
         height: 100%;
     }
 
-    .kayak{
+    .kayak {
         background: url("/img/fooldali_crop.jpg");
         height: 100vh;
         background-size: cover, cover;
         background-repeat: no-repeat;
     }
-    .kayak h1{
+
+    .kayak h1 {
         font-size: 4vw !important;
     }
-    .titleh h1{
+
+    .titleh h1 {
         font-size: 3rem;
     }
-    .reszletek{
+
+    .reszletek {
         padding-left: 100px;
         padding-bottom: 40px;
     }
-    .reszletek button{
+
+    .reszletek button {
         width: 130px;
         font-size: 0.8em;
     }
 }
 
 @media screen and (max-width: 580px) {
-
-    .kayak{
+    .kayak {
         background: url("/img/proba.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;
         height: 70vh;
-
     }
-    .kayak h1{
+
+    .kayak h1 {
         font-size: 5vw !important;
     }
 
-    .kayak button{
+    .kayak button {
         width: 13vw;
         font-size: 1.5vw;
     }
 
-    .kayak-text h1{
+    .kayak-text h1 {
         font-size: 1.5rem !important;
         width: 80vw !important;
     }
 
-    .titleh h2{
+    .titleh h2 {
         font-size: 2rem;
     }
 
-    .titleh h1{
+    .titleh h1 {
         font-size: 10vw;
         margin-left: 0;
     }
-    .reszletek{
+
+    .reszletek {
         padding-left: 40px;
     }
-    .reszletek button{
+
+    .reszletek button {
         width: 80px;
         font-size: 0.5em;
     }
-} 
+}
+
+/* Loading Overlay Styles */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
