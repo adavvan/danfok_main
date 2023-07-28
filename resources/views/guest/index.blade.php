@@ -24,13 +24,13 @@
   
       <section class="container-fluid animate-on-scroll">
         <div class="row justify-content-center">
-            <div class="csomag d-flex flex-column justify-content-end pointer" style="background-image: url('img/osztaly.jpg');">
+            <div class="csomag d-flex flex-column justify-content-end pointer" style="background-image: url('img/osztaly.jpg');" onclick="window.location.href='{{ route('guest.csomagok.osztaly') }}'">
                 <h3>Osztálykirándulás</h3>
             </div>
-            <div class="csomag d-flex flex-column justify-content-end pointer" style="background-image: url('img/golya.jpg');">
+            <div class="csomag d-flex flex-column justify-content-end pointer" style="background-image: url('img/golya.jpg');" onclick="window.location.href='{{ route('guest.csomagok.golya') }}'">
                 <h3>Gólyatábor</h3>
             </div>
-            <div class="csomag d-flex flex-column justify-content-end pointer" style="background-image: url('img/ceges.jpg');">
+            <div class="csomag d-flex flex-column justify-content-end pointer" style="background-image: url('img/ceges.jpg');" onclick="window.location.href='{{ route('guest.csomagok.cegeknek') }}'">
                 <h3>Cégeknek</h3>
             </div>
         </div>
@@ -61,4 +61,6 @@
               </div>
           @endforeach
       </section>
+      <script src="{{ asset('js/loader.js') }}"></script>
+      <script src="{{ asset('js/navbar.js') }}"></script>
 @endsection

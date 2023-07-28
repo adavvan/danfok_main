@@ -1,4 +1,5 @@
 const navbar = document.querySelector(".nav-container");
+navbar.classList.add("nav-main-container")
 let mouseEnter = false;
 
 // Function to toggle the navbar background when scrolling

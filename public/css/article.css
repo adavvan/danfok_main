@@ -44,6 +44,21 @@
     padding: 10px 10px 10px 10px;
 }
 
+.cs-details{
+    position: absolute;
+    right:    0;
+    bottom:   0;
+    color: black;
+    text-decoration: none;
+    background-color: #fcbd2b;
+    padding: 10px 10px 10px 10px;
+}
+.hb a{
+    background-color: #3f91ce;
+    padding: 0.25em 0.5em;
+    color: white;
+}
+
 @media screen and (max-width: 990px) {
     .post-img{
         width: 100%;
@@ -56,5 +71,11 @@
     
     .details{
         font-size: 0.7em;
+    }
+
+    
+
+    .cs-post-body{
+        height: 300px;
     }
 }

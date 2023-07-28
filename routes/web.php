@@ -25,6 +25,11 @@ Route::get('/galeria', [GuestGalleryController::class, 'index'])->name('guest.ga
 Route::get('/udulokozpont', function () { return view('guest.udulo');})->name('guest.udulo');
 Route::get('/kapcsolat', function () { return view('guest.kapcsolat');})->name('guest.kapcsolat');
 Route::get('/szallasfoglalas', function () { return view('guest.szallas');})->name('guest.szallas');
+Route::get('/csomagajanlatok', function () { return view('guest.csomagajanlatok');})->name('guest.csomagajanlatok');
+Route::get('/csomagajanlatok/osztalykirandulas', function () { return view('guest.csomagok.osztaly');})->name('guest.csomagok.osztaly');
+Route::get('/csomagajanlatok/golyatabor', function () { return view('guest.csomagok.golya');})->name('guest.csomagok.golya');
+Route::get('/csomagajanlatok/cegeknek', function () { return view('guest.csomagok.cegeknek');})->name('guest.csomagok.cegeknek');
+
 Route::get('/hirek', [GuestArticleController::class, 'index'])->name('guest.hirek');
 route::get('/hir/{hir}', [GuestArticleController::class, 'singleArticle'])->name('guest.hir');
 

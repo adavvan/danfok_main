@@ -30,7 +30,7 @@
                 <a class="nav-link {{ (request()->is('udulokozpont')) ? 'active' : '' }}" href="{{ route('guest.udulo') }}">ÜDÜLŐKÖZPONT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ (request()->is('csomagajanlatok')) ? 'active' : '' }}" href="csomagajanlatok.php">CSOMAGAJÁNLATOK</a>
+                <a class="nav-link {{ (request()->is('csomagajanlatok')) ? 'active' : '' }}" href="{{ route('guest.csomagajanlatok') }}">CSOMAGAJÁNLATOK</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link {{ (request()->is('szallasfoglalas')) ? 'active' : '' }}" href="{{ route('guest.szallas') }}">SZÁLLÁSFOGLALÁS</a>
@@ -97,10 +97,8 @@
         </div>
       </div>
     </footer>
-    <script src="{{ asset('js/loader.js') }}"></script>
     <script src="{{ asset('js/animations.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="{{ asset('js/navbar.js') }}"></script>
   </body>
 </html>
