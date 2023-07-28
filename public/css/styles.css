@@ -100,8 +100,8 @@ nav {
     padding-top: 0 !important;
 }
 
-nav .container-fluid {
-    background-image: url("/svg/nav_web.svg");
+.nav-container {
+    background-color: transparent;
     background-size: cover;
     background-position: center center;
     top: 0; /* Position the navbar at the top of the page */
@@ -109,6 +109,10 @@ nav .container-fluid {
     width: 100%;
     padding-bottom: 45px;
     height: 100%;
+}
+
+.nav-container.show-background{
+    background-image: url("/svg/nav_web.svg");
 }
 
 nav ul {
@@ -403,6 +407,30 @@ input[type="date"] {
 .sub-category:hover {
     background-color: #fdd578;
     transform: scale(1.05);
+}
+
+/* Anims */
+
+.animate-on-scroll {
+    opacity: 0;
+}
+
+.animate-fade-in {
+    opacity: 0;
+}
+
+
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
 }
 
 /* Media Queries */
