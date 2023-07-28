@@ -22,7 +22,7 @@ function toggleNavbarBackground() {
 }
 
 function checkMobileView() {
-    let isMobileView = window.matchMedia("(max-width: 767px)").matches;
+    let isMobileView = window.matchMedia("(max-width: 991px)").matches;
 
     if (isMobileView) {
         // If in mobile view, always keep the background visible
