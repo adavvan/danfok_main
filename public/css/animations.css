@@ -1,0 +1,35 @@
+/* animations.css */
+
+/* Add a class to elements you want to animate */
+.animated-fade-in {
+    opacity: 0; /* Set the initial opacity to 0 */
+    animation: fadeIn 1s ease-in-out forwards; /* Use the fadeIn animation with 1 second duration */
+  }
+  
+  /* Define the fadeIn animation keyframes */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .animated-slide-in {
+    opacity: 0; /* Set the initial opacity to 0 */
+    transform: translateX(-50px); /* Move the element 50px to the left */
+    animation: slideIn 1s ease-in-out forwards; /* Use the slideIn animation with 1 second duration */
+  }
+  
+  /* Define the slideIn animation keyframes */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
