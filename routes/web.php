@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Guest\IndexController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminGalleryController;
 use App\Http\Controllers\Admin\ArticleController;
@@ -17,9 +18,8 @@ use App\Http\Controllers\Guest\GuestGalleryController;
 |
 */
 
-Route::get('/', function () {
-    return view('guest.index');
-});
+Route::get('/', [IndexController::class, 'index'])->name('guest.index');
+
 
 Route::get('/galeria', [GuestGalleryController::class, 'index'])->name('guest.galeria');
 Route::get('/udulokozpont', function () { return view('guest.udulo');})->name('guest.udulo');
