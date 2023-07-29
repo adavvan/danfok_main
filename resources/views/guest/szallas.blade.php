@@ -20,7 +20,7 @@
             Részletes tájékoztatásért keresse munkatársainkat elérhetőségeinken!
         </p>
     </div>
-    <form action="" method="post">
+    <form action="{{ route('szallas.send') }}" method="post" class="pb-3">
         <div class="row flex-column">
             <div class="col"> 
                 <h3 class="sztitle">Elérhetőségeink</h3>
@@ -142,20 +142,43 @@
                         <p>Környezetvédelmi hozzájárulás:<br>+200 Ft/fő/éj</p>
                     </div>                
                 </div>
+                <div class="col d-flex flex-column">
+                    <div class="szallasimg">
+                        <img class="rounded-circle" src="img/sator.png" id="sator" onmousedown="selectType(this.id)">
+                    </div>
+                    <div>
+                        <h4>Sátor</h4>
+                        <p>1200 Ft/fő/éj<p>
+                        <p>Környezetvédelmi hozzájárulás:<br>+200 Ft/fő/éj</p>
+                    </div>                
+                </div>
             </div>
+            <p><i>Kizárólagosság: 1 000 000 Ft/éj</i></p>
             <input type="hidden" id="szType" name="szType" value="">
         </div>
         <h3 class="sztitle">Személyes adatok</h3>
         <div>
             <label for="nev">Név</label><br>
-            <input type="text" name="nev"><br>
+            <input type="text" name="nev" required="required"><br>
             <label for="tel">Telefonszám</label><br>
-            <input type="text" name="tel"><br>
+            <input type="text" name="tel" required="required"><br>
             <label for="email">Email</label><br>
-            <input type="email" name="email"><br>
+            <input type="email" name="email" required="required"><br>
+            @csrf
             <button class="btn btn-md btn-primary" style="margin-left: 0; margin-top: 0.6vh; background-color: #3f91ce" name="submit" type="submit" inputmode="text">AJÁNLATKÉRÉS KÜLDÉSE</button>
         </div>
     </form>
+    @if(Session::has('success'))
+         <div class="alert alert-success">
+             {{ Session::get('success') }}
+         </div>
+        @endif
+        
+        @if(Session::has('error'))
+            <div class="alert alert-danger">
+                {{ Session::get('error') }}
+            </div>
+        @endif
 </div>
 
 <script>

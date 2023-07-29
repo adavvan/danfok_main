@@ -1,5 +1,5 @@
 @extends('layouts.guest')
-@section('title', 'Üdülőközpont - Dánfok')
+@section('title', 'Kapcsolat - Dánfok')
 
 @section('content')
 <link rel="stylesheet" href="css/kapcsolat.css"/>
@@ -44,10 +44,10 @@
         <h2 class="highlight-blue">KAPCSOLATFELVÉTEL</h2>
     </div>
 </section>
-
 <section class="container-fluid pb-5" id="  ">
      <div class="container">
-         <form action="" method="post">
+         <form action="{{ route('contact.send') }}" method="post" class="pb-3">
+            @csrf
             <div class="row">
                 <div class="col-12 col-md-4 left-side">
                     <div class="pb-2">
@@ -75,6 +75,17 @@
                  </div>
             </div>
          </form>
+         @if(Session::has('success'))
+         <div class="alert alert-success">
+             {{ Session::get('success') }}
+         </div>
+        @endif
+        
+        @if(Session::has('error'))
+            <div class="alert alert-danger">
+                {{ Session::get('error') }}
+            </div>
+        @endif
      </div>
 </section>
 

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Guest\BookingController;
+use App\Http\Controllers\Guest\ContactController;
 use App\Http\Controllers\Guest\IndexController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminGalleryController;
@@ -23,8 +25,13 @@ Route::get('/', [IndexController::class, 'index'])->name('guest.index');
 
 Route::get('/galeria', [GuestGalleryController::class, 'index'])->name('guest.galeria');
 Route::get('/udulokozpont', function () { return view('guest.udulo');})->name('guest.udulo');
+
 Route::get('/kapcsolat', function () { return view('guest.kapcsolat');})->name('guest.kapcsolat');
+Route::post('/kapcsolat', [ContactController::class, 'sendEmail'])->name('contact.send');
+
 Route::get('/szallasfoglalas', function () { return view('guest.szallas');})->name('guest.szallas');
+Route::post('/szallasfoglalas', [BookingController::class, 'sendEmail'])->name('szallas.send');
+
 Route::get('/csomagajanlatok', function () { return view('guest.csomagajanlatok');})->name('guest.csomagajanlatok');
 Route::get('/csomagajanlatok/osztalykirandulas', function () { return view('guest.csomagok.osztaly');})->name('guest.csomagok.osztaly');
 Route::get('/csomagajanlatok/golyatabor', function () { return view('guest.csomagok.golya');})->name('guest.csomagok.golya');
