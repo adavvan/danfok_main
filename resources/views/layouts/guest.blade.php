@@ -38,7 +38,7 @@
                 <a class="nav-link {{ (request()->is('szallasfoglalas')) ? 'active' : '' }}" href="{{ route('guest.szallas') }}">SZÁLLÁSFOGLALÁS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ (request()->is('hirek')) ? 'active' : '' }}" href="{{ route('guest.hirek') }}">HÍREK</a>
+                <a class="nav-link {{ (request()->is('hirek')) ? 'active' : '' }}" href="{{ route('guest.hirek') }}">AKTUÁLIS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link {{ (request()->is('galeria')) ? 'active' : '' }}" href="{{ route('guest.galeria') }}">GALÉRIA</a>
@@ -88,7 +88,7 @@
               </div>
               <div class="footer_icon d-flex align-items-center">
                 <img src="{{ asset('img/footer_icon_email.png') }}">
-                <p>udulokozpont@gmail.com</p>
+                <p>kapcsolat@danfok.hu</p>
               </div>
               <div class="footer_icon d-flex align-items-center">
                 <img src="{{ asset('img/footer_icon_adress.png') }}">

@@ -24,7 +24,7 @@ class ContactController extends Controller
 
         try {
             // Send the email using the ContactEmail Mailable
-            Mail::to('info@danfok.hu')->send(new ContactEmail($name, $visitor_email, $message));
+            Mail::to('kapcsolat@danfok.hu')->send(new ContactEmail( $name, $visitor_email, $message));
 
             // Redirect with success message
             return redirect()->route('guest.kapcsolat')->with('success', 'Sikeres üzenetküldés!');

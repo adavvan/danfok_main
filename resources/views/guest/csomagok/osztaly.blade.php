@@ -25,7 +25,7 @@
             <img src="{{ asset('img/osztaly.jpg') }}" style="width: 550px;">
         </div>
         <div class="col">
-            <h2><strong>Kíváncsi vagy, hogy milyen élmények várnak rád Dánfokon? <br>Akkor tekintsd meg <a href="galeria.php">galériánkat</a>!</strong></h2>
+            <h2><strong>Kíváncsi vagy, hogy milyen élmények várnak rád Dánfokon? <br>Akkor tekintsd meg <a href="{{route('guest.galeria')}}">galériánkat</a>!</strong></h2>
         </div>
     </div>
 </section>

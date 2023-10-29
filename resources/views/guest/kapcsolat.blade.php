@@ -25,7 +25,7 @@
             <div class="col-sm d-flex align-items-center mcenter">
                 <img src="img/footer_icon_email.png" class="circle">
                 <div class="kinfo">
-                    <p>udulokozpont@gmail.com</p>
+                    <p>kapcsolat@danfok.hu</p>
                 </div>
                 
             </div>

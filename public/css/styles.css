@@ -441,11 +441,6 @@ input[type="date"] {
     }
 }
 
-@keyframes fadeInAnimation {
-    to {
-        opacity: 1;
-    }
-}
 
 /* Media Queries */
 @media (max-width: 1000px) {
