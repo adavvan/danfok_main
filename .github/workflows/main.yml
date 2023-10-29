@@ -14,13 +14,13 @@ jobs:
       - name: Install dependencies
         run: composer install
 
-      - name: Install Vite
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-          cache: npm
-        
-      - name: Build
+      - name: Setup Node
+        uses: actions/setup-node@v3
+
+      - name: Install node dependencies
+        uses: bahmutov/npm-install@v1
+
+      - name: Build project
         run: npm run build
 
       - name: Deploy
