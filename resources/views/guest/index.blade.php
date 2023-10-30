@@ -13,7 +13,7 @@
             NYÁRI ÉLMÉNYEK A <br> DÁNFOKI ÜDÜLŐKÖZPONTBAN!
         </h1>
         <div class="reszletek-hullam animate-fade-in">
-            <div class="reszletek"><button class="btn default" onclick="window.location.href='csomagajanlatok.php'">RÉSZLETEK</button></duv>
+            <div class="reszletek"><button class="btn default" onclick="window.location.href='{{route('guest.csomagajanlatok')}}'">RÉSZLETEK</button></duv>
         </div>
         </div>
     </section>
