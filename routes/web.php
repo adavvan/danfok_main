@@ -40,7 +40,7 @@ Route::get('/csomagajanlatok/cegeknek', function () { return view('guest.csomago
 Route::get('/hirek', [GuestArticleController::class, 'index'])->name('guest.hirek');
 route::get('/hir/{hir}', [GuestArticleController::class, 'singleArticle'])->name('guest.hir');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::group(['middleware' => ['auth', 'web']], function () {
