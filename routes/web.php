@@ -36,10 +36,12 @@ Route::get('/csomagajanlatok', function () { return view('guest.csomagajanlatok'
 Route::get('/csomagajanlatok/osztalykirandulas', function () { return view('guest.csomagok.osztaly');})->name('guest.csomagok.osztaly');
 Route::get('/csomagajanlatok/golyatabor', function () { return view('guest.csomagok.golya');})->name('guest.csomagok.golya');
 Route::get('/csomagajanlatok/cegeknek', function () { return view('guest.csomagok.cegeknek');})->name('guest.csomagok.cegeknek');
+Route::get('/adatkezeles', function () { return view('guest.adatkezeles');})->name('guest.adatkezeles');
+
 
 Route::get('/hirek', [GuestArticleController::class, 'index'])->name('guest.hirek');
 route::get('/hir/{hir}', [GuestArticleController::class, 'singleArticle'])->name('guest.hir');
-
+    
 Auth::routes(['register' => false]);
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -50,7 +52,7 @@ Route::group(['middleware' => ['auth', 'web']], function () {
     Route::post('/admin/gallery/subcategory', [AdminGalleryController::class, 'storeSubcategory'])->name('admin.gallery.storeSubcategory');
     Route::delete('/admin/gallery/subcategory/{subcategory}', [AdminGalleryController::class, 'destroySubcategory'])->name('admin.gallery.destroySubcategory');
     Route::post('/admin/gallery/image', [AdminGalleryController::class, 'storeImage'])->name('admin.gallery.storeImage');
-    Route::delete('/admin/gallery/image/{image}', [AdminGalleryController::class, 'destroyImage'])->name('admin.gallery.destroyImage'); ;
+    Route::delete('/admin/gallery/image/{image}', [AdminGalleryController::class, 'destroyImage'])->name('admin.gallery.destroyImage');
     // Routes for handling articles
     Route::get('/admin/articles', [ArticleController::class, 'index'])->name('admin.articles.index');
     Route::get('/admin/articles/create', [ArticleController::class, 'create'])->name('admin.articles.create');

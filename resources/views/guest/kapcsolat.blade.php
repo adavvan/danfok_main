@@ -60,7 +60,7 @@
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" required="required">
                             <label>
-                                Az űrlap használatával Ön tudomásul veszi és elfogadja az <a href="adatkezeles.php">Adatkezelési tájékoztatónkat</a></label>
+                                Az űrlap használatával Ön tudomásul veszi és elfogadja az <a href="{{route('guest.adatkezeles')}}">Adatkezelési tájékoztatónkat</a></label>
                         </div>
                     </div>
                 </div>

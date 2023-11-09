@@ -164,6 +164,11 @@
             <input type="text" name="tel" required="required"><br>
             <label for="email">Email</label><br>
             <input type="email" name="email" required="required"><br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" required="required">
+                <label>
+                    Az űrlap használatával Ön tudomásul veszi és elfogadja az <a href="{{route('guest.adatkezeles')}}">Adatkezelési tájékoztatónkat</a></label>
+            </div>
             @csrf
             <button class="btn btn-md btn-primary" style="margin-left: 0; margin-top: 0.6vh; background-color: #3f91ce" name="submit" type="submit" inputmode="text">AJÁNLATKÉRÉS KÜLDÉSE</button>
         </div>
