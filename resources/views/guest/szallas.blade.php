@@ -13,7 +13,7 @@
 <div class="container pb-5">
     <div class="felhivas">
         <p>
-            <span class="pb-5">Kedves Érdeklődő!            
+            <span class="pb-5">Kedves Érdeklődő!
         </p>
         <p>
             Szeretnénk felhívni a figyelmét, hogy áraink nem érvényesek az ünnepnapokra, hosszú hétvégékre, illetve az utószezonra.<br>
@@ -22,7 +22,7 @@
     </div>
     <form action="{{ route('szallas.send') }}" method="post" class="pb-3">
         <div class="row flex-column">
-            <div class="col"> 
+            <div class="col">
                 <h3 class="sztitle">Elérhetőségeink</h3>
                 <div>
                     <label for="start">Foglalás kezdete</label><br>
@@ -50,21 +50,21 @@
                     </div>
                     <div>
                         <h4>Panzió</h4>
-                        <p>2 fős szoba ára <br>8000 Ft/szoba/éj<p>
-                        <p>3 fős szoba ára <br>12000 Ft/szoba/éj<p>
-                        <p>Környezetvédelmi hozzájárulás:<br>+200 Ft/fő/éj</p>
-                    </div>                 
+                        <p>2 fős szoba ára <br>9 600 Ft/szoba/éj<p>
+                        <p>3 fős szoba ára <br>14 400 Ft/szoba/éj<p>
+                        <p>Környezetvédelmi hozzájárulás + IFA:<br>450 Ft/fő/éj</p>
+                    </div>
                 </div>
                 <div class="col d-flex flex-column">
                     <div class="szallasimg">
                         <img class="rounded-circle" src="img/korhaz.png" alt="Körépület" id="korepulet" onmousedown="selectType(this.id)">
-                    </div>           
+                    </div>
                     <div>
                         <h4>Körépület</h4>
-                        <p>Mnimum 10 fő esetén: 3000 Ft/fő/éj<p>
-                        <p>Kevesebb, mint 10 fő esetén: 30000 Ft/egység/éj<p>
-                        <p>Környezetvédelmi hozzájárulás:<br>+200 Ft/fő/éj</p>
-                    </div>                    
+                        <p>Mnimum 10 fő esetén: 3 600 Ft/fő/éj<p>
+                        <p>Kevesebb, mint 10 fő esetén: 36 000 Ft/egység/éj<p>
+                        <p>Környezetvédelmi hozzájárulás + IFA:<br>450 Ft/fő/éj</p>
+                    </div>
                 </div>
                 <div class="col d-flex flex-column">
                     <div class="szallasimg">
@@ -84,42 +84,42 @@
                                 <tr>
                                     <td>3 ágyas</td>
                                     <td>2 db</td>
-                                    <td>7200 Ft</td>
+                                    <td>8 680 Ft</td>
                                 </tr>
                                 <tr>
                                     <td>4 ágyas</td>
                                     <td>5 db</td>
-                                    <td>9600 Ft</td>
+                                    <td>11 520 Ft</td>
                                 </tr>
                                 <tr>
                                     <td>5 ágyas</td>
                                     <td>4 db</td>
-                                    <td>12 000 Ft</td>
+                                    <td>14 400 Ft</td>
                                 </tr>
                                 <tr>
                                     <td>6 ágyas</td>
                                     <td>1 db</td>
-                                    <td>14 400 Ft</td>
+                                    <td>17 280 Ft</td>
                                 </tr>
                                 <tr>
                                     <td>8 ágyas</td>
                                     <td>8 db</td>
-                                    <td>19 200 Ft</td>
+                                    <td>23 040 Ft</td>
                                 </tr>
                                 <tr>
                                     <td>10 ágyas</td>
                                     <td>1 db</td>
-                                    <td>24 000 Ft</td>
+                                    <td>28 800 Ft</td>
                                 </tr>
                                 <tr>
                                     <td>12 ágyas</td>
                                     <td>3 db</td>
-                                    <td>28 800 Ft</td>
+                                    <td>34 560 Ft</td>
                                 </tr>
                             </table>
                         </div>
-                        <p>Környezetvédelmi hozzájárulás:<br>+200 Ft/fő/éj</p>
-                    </div>                 
+                        <p>Környezetvédelmi hozzájárulás + IFA:<br>450 Ft/fő/éj</p>
+                    </div>
                 </div>
                 <div class="col d-flex flex-column">
                     <div class="szallasimg">
@@ -128,8 +128,8 @@
                     <div>
                         <h4>Jurta</h4>
                         <p>2000 Ft/fő/éj<p>
-                        <p>Környezetvédelmi hozzájárulás:<br>+200 Ft/fő/éj</p>
-                    </div>                 
+                        <p>Környezetvédelmi hozzájárulás + IFA:<br>450 Ft/fő/éj</p>
+                    </div>
                 </div>
                 <div class="col d-flex flex-column">
                     <div class="szallasimg">
@@ -139,8 +139,8 @@
                         <h4>Vendégház</h4>
                         <p>10 fő elszállásolására alkalmas az emeleten 3 szobával, közös mosdóval és fürdőszobával, a földszinten 30 fős közösségi térrel<p>
                         <p>36000 Ft/éj<p>
-                        <p>Környezetvédelmi hozzájárulás:<br>+200 Ft/fő/éj</p>
-                    </div>                
+                        <p>Környezetvédelmi hozzájárulás + IFA:<br>+450 Ft/fő/éj</p>
+                    </div>
                 </div>
                 <div class="col d-flex flex-column">
                     <div class="szallasimg">
@@ -149,8 +149,8 @@
                     <div>
                         <h4>Sátor</h4>
                         <p>1200 Ft/fő/éj<p>
-                        <p>Környezetvédelmi hozzájárulás:<br>+200 Ft/fő/éj</p>
-                    </div>                
+                        <p>Környezetvédelmi hozzájárulás + IFA:<br>+450 Ft/fő/éj</p>
+                    </div>
                 </div>
             </div>
             <p><i>Kizárólagosság: 1 000 000 Ft/éj</i></p>
@@ -178,7 +178,7 @@
              {{ Session::get('success') }}
          </div>
         @endif
-        
+
         @if(Session::has('error'))
             <div class="alert alert-danger">
                 {{ Session::get('error') }}
@@ -196,8 +196,8 @@
             listItem.classList.remove("selected");
             selectedTypes = selectedTypes.filter(v => v !== id);
             document.getElementById("szType").value = selectedTypes;
-        }      
-        else 
+        }
+        else
         {
             listItem.classList.add("selected");
             selectedTypes.push(id);
