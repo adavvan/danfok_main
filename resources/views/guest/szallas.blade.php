@@ -127,7 +127,7 @@
                     </div>
                     <div>
                         <h4>Jurta</h4>
-                        <p>2000 Ft/fő/éj<p>
+                        <p>2 400 Ft/fő/éj<p>
                         <p>Környezetvédelmi hozzájárulás + IFA:<br>450 Ft/fő/éj</p>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
                     <div>
                         <h4>Vendégház</h4>
                         <p>10 fő elszállásolására alkalmas az emeleten 3 szobával, közös mosdóval és fürdőszobával, a földszinten 30 fős közösségi térrel<p>
-                        <p>36000 Ft/éj<p>
+                        <p>43 200 Ft/éj<p>
                         <p>Környezetvédelmi hozzájárulás + IFA:<br>+450 Ft/fő/éj</p>
                     </div>
                 </div>
@@ -148,7 +148,7 @@
                     </div>
                     <div>
                         <h4>Sátor</h4>
-                        <p>1200 Ft/fő/éj<p>
+                        <p>1 500 Ft/fő/éj<p>
                         <p>Környezetvédelmi hozzájárulás + IFA:<br>+450 Ft/fő/éj</p>
                     </div>
                 </div>
