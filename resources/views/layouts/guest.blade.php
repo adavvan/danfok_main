@@ -48,7 +48,7 @@
               </li>
             </ul>
             <div class="social-icons">
-              <a class="social-icon" href="#" target="_blank">
+              <a class="social-icon" href="#" target="https://www.facebook.com/danfok">
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a class="social-icon" href="#" target="_blank">

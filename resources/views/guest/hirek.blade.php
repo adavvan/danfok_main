@@ -6,7 +6,7 @@
 <div class="wrapper">
 
     <section class="titleh container-fluid pb-5 pt-20">
-        <h1 class="pb-2">Hírek</h1>
+        <h1 class="pb-2">Aktuális</h1>
         <div class="sargahullam"><img src="svg/hullam_sarga-03.svg"></div>
     </section>
         @foreach ($articles as $article)
@@ -18,11 +18,11 @@
                         <h3 class="post-title"><a href="{{ route('guest.hir', $article->id) }}">{{ $article->title }}</a></h3>
                         <p>{{ strip_tags(substr($article->content, 0, 200)) . "..." }}</p>
                         <span class="post-date">
-                            {{$article->created_at}} 
+                            {{$article->created_at}}
                         </span>
-                        <a href="{{ route('guest.hir', $article->id) }}" class="details">Bővebben...</a> 
+                        <a href="{{ route('guest.hir', $article->id) }}" class="details">Bővebben...</a>
                     </div>
-                </div>  
+                </div>
             </div>
         @endforeach
 </div>
