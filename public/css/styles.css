@@ -559,6 +559,10 @@ input[type="date"] {
         margin-left: 0;
     }
 
+    .titleh{
+        width: 100%;
+    }
+
     .reszletek {
         padding-left: 40px;
     }

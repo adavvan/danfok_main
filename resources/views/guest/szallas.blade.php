@@ -2,7 +2,7 @@
 @section('title', 'Szállásfoglalás - Dánfok')
 @section('content')
 
-<section class="titleh container-fluid">
+<section class="titleh container-fluid pb-5 pt-20">
     <h1>SZÁLLÁSFOGLALÁS</h1>
     <div class="sargahullam"><img src="svg/hullam_sarga-03.svg"></div>
 </section>
