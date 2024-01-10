@@ -11,9 +11,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+
+      - name: Update dependencies
+        run: composer update
+        
       - name: Install dependencies
         run: composer install
-
+    
       - name: Setup Node
         uses: actions/setup-node@v3
 
