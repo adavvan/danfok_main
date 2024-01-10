@@ -6,11 +6,16 @@ use App\Http\Controllers\Controller;
 use App\Mail\BookingEmail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 
 class BookingController extends Controller
 {
     public function sendEmail(Request $request)
     {
+        $request->validate([
+            'cf-turnstile-response' => ['required', Rule::turnstile()],
+        ]);
+    
         // Validate the form data
   /*      $request->validate([
             'name' => 'required',
@@ -19,8 +24,7 @@ class BookingController extends Controller
             'start' => 'required',
             'end' => 'required',
             'szType' => 'required',
-        ]);
-        \Log::info("XDDD"); */
+        ]); */
 
         $name = $request->input('name');
         $visitor_email = $request->input('email');

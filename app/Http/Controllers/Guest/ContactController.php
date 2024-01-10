@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Mail\ContactEmail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+
+
 
 class ContactController extends Controller
 {
@@ -13,6 +16,7 @@ class ContactController extends Controller
     {
         // Validate the form data
         $request->validate([
+            'cf-turnstile-response' => ['required', Rule::turnstile()],
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required',
