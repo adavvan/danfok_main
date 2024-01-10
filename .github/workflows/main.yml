@@ -13,10 +13,6 @@ jobs:
 
 
       - name: Update dependencies
-        run: composer update
-
-        
-      - name: Install dependencies
         run: composer install
     
       - name: Setup Node
