@@ -36,31 +36,31 @@
         <table class="table">
             <tr>
                 <td class="table">Felnőtt belépő</td>
-                <td class="table">1100 Ft/fő/nap</td>
+                <td class="table"></td>
             </tr>
             <tr>
                 <td class="table">Felnőtt belépő békési lakcímkártyával</td>
-                <td class="table">990 Ft/fő/nap</td>
+                <td class="table"></td>
             </tr>
             <tr>
                 <td class="table">Gyerek/diák/nyugdíjas</td>
-                <td class="table">850 Ft/fő/nap</td>
+                <td class="table"></td>
             </tr>
             <tr>
                 <td class="table">Gyerek/diák/nyugdíjas békési lakcímkártyával</td>
-                <td class="table">790 Ft/fő/nap</td>
+                <td class="table"></td>
             </tr>
             <tr>
                 <td class="table">Horgász</td>
-                <td class="table">1100 Ft/fő/nap</td>
+                <td class="table"></td>
             </tr>
             <tr>
                 <td class="table">Horgász békési lakcímkártyával</td>
-                <td class="table">990 Ft/fő/nap</td>
+                <td class="table"></td>
             </tr>
             <tr>
                 <td class="table">KRESZ pálya használata</td>
-                <td class="table">600 Ft/fő/nap</td>
+                <td class="table"></td>
             </tr>
         </table>
     </div>
@@ -134,7 +134,7 @@
         </tr>
     </table>
     </div>
-    
+
     <div class="h-100 d-flex align-items-center justify-content-center">
         <h5 class="highlight-yellow-table">Eszközbérlés</h5>
     </div>
