@@ -71,7 +71,8 @@
                     
                 </div>
                 <div class="btn-wrap text-md-right pt-3">
-                        <button class="btn btn-md btn-primary" type="submit" name="submit" inputmode="text">ÜZENET ELKÜLDÉSE</button>
+                    <x-turnstile />
+                    <button class="btn btn-md btn-primary" type="submit" name="submit" inputmode="text">ÜZENET ELKÜLDÉSE</button>
                  </div>
             </div>
          </form>

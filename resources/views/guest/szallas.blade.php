@@ -153,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <p><i>Kizárólagosság: 1 000 000 Ft/éj</i></p>
+            <p><i>Kizárólagosság: 1 240 000 Ft/éj</i></p>
             <input type="hidden" id="szType" name="szType" value="">
         </div>
         <h3 class="sztitle">Személyes adatok</h3>
@@ -170,6 +170,7 @@
                     Az űrlap használatával Ön tudomásul veszi és elfogadja az <a href="{{route('guest.adatkezeles')}}">Adatkezelési tájékoztatónkat</a></label>
             </div>
             @csrf
+            <x-turnstile />
             <button class="btn btn-md btn-primary" style="margin-left: 0; margin-top: 0.6vh; background-color: #3f91ce" name="submit" type="submit" inputmode="text">AJÁNLATKÉRÉS KÜLDÉSE</button>
         </div>
     </form>
