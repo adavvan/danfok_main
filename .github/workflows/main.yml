@@ -12,10 +12,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: asd
-        run:  | 
-          echo ${{secrets.FTP_HOST}} | sed 's/./& /g'
-          echo ${{secrets.FTP_USERNAME}} | sed 's/./& /g'
-          echo ${{secrets.FTP_PASSWORD}} | sed 's/./& /g'
 
       - name: Update dependencies
         run: composer install
