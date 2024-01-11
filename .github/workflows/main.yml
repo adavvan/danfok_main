@@ -11,6 +11,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: asd
+        run: 
+          echo ${{secrets.FTP_HOST}}
+          echo ${{secrets.FTP_USERNAME}}
+          echo ${{secrets.FTP_PASSWORD}}
 
       - name: Update dependencies
         run: composer install
