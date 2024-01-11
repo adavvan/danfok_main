@@ -50,7 +50,7 @@
               </li>
             </ul>
             <div class="social-icons">
-              <a class="social-icon" href="#" target="https://www.facebook.com/danfok">
+              <a class="social-icon" href="https://www.facebook.com/danfok" target="_blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a class="social-icon" href="#" target="_blank">
