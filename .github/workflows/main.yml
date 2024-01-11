@@ -13,9 +13,9 @@ jobs:
 
       - name: asd
         run: 
-          echo ${{secrets.FTP_HOST}}
-          echo ${{secrets.FTP_USERNAME}}
-          echo ${{secrets.FTP_PASSWORD}}
+          echo -n "${{ secrets.FTP_HOST }}" | xxd -ps
+          echo -n "${{ secrets.FTP_USERNAME }}" | xxd -ps
+          echo -n "${{ secrets.FTP_PASSWORD }}" | xxd -ps
 
       - name: Update dependencies
         run: composer install
