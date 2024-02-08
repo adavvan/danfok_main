@@ -62,5 +62,5 @@
           @endforeach
       </section>
       <script src="{{ asset('js/loader.js') }}"></script>
-      <script src="{{ asset('js/navbar.js') }}"></script>
-@endsection
+{{--       <script src="{{ asset('js/navbar.js') }}"></script>
+ --}}@endsection
