@@ -33,6 +33,7 @@ class ContactEmail extends Mailable
     {
         return $this->view('emails.contact')
             ->subject('Kapcsolat')
-            ->from('info@danfok.hu');
+            ->from('info@danfok.hu')
+            ->replyTo($this->visitor_email);
     }
 }

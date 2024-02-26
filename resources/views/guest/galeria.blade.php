@@ -1,9 +1,10 @@
 @extends('layouts.guest')
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-<link rel="stylesheet" href="css/gallery.css"/>
+
 @section('title', 'Galéria - Dánfok')
 
 @section('content')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="css/gallery.css"/>
 <div class="wrapper">
     <section class="titleh container-fluid pb-5 pt-20">
         <h1 class="pb-3">Galéria</h1>
@@ -44,7 +45,7 @@
             </div>
         </div>
         @endforeach
-    </div> 
+    </div>
     <div class="clear"></div>
 </div>
 

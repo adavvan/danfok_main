@@ -11,6 +11,26 @@
 </section>
 
 <div class="container pb-5">
+    @if(Session::has('success'))
+            <div class="alert alert-success">
+                {{ Session::get('success') }}
+            </div>
+            @endif
+
+            @if(Session::has('error'))
+                <div class="alert alert-danger">
+                    {{ Session::get('error') }}
+                </div>
+            @endif
+    @if($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
     <div class="felhivas">
         <p>
             <span class="pb-5">Kedves Érdeklődő!
@@ -21,23 +41,24 @@
         </p>
     </div>
     <form action="{{ route('szallas.send') }}" method="post" class="pb-3">
+        @csrf
         <div class="row flex-column">
             <div class="col">
                 <h3 class="sztitle">Elérhetőségeink</h3>
                 <div>
                     <label for="start">Foglalás kezdete</label><br>
-                    <input type="date" name="start">
+                    <input type="date" name="start" value="{{ old('start') }}">
                 </div>
                 <div>
                     <label for="end">Foglalás vége</label><br>
-                    <input type="date" name="end">
+                    <input type="date" name="end" value="{{ old('end') }}">
                 </div>
             </div>
             <div class="col pt-5 pb-5">
                 <h3 class="sztitle">Létszám megadása</h3>
                 <div>
                     <label class="" for="lszam">Létszám:</label><br>
-                    <input type="number" step="1" name="lszam" value="1">
+                    <input type="number" step="1" name="lszam" value="1" value="{{ old('lszam') }}">
                 </div>
             </div>
         </div>
@@ -158,14 +179,17 @@
         </div>
         <h3 class="sztitle">Személyes adatok</h3>
         <div>
-            <label for="nev">Név</label><br>
-            <input type="text" name="nev" required="required"><br>
+            <label for="name">Név</label><br>
+            <input type="text" name="name" value="{{ old('name') }}">
+            <br>
             <label for="tel">Telefonszám</label><br>
-            <input type="text" name="tel" required="required"><br>
+            <input type="text" name="tel" value="{{ old('tel') }}">
+            <br>
             <label for="email">Email</label><br>
-            <input type="email" name="email" required="required"><br>
+            <input type="email" name="email" value="{{ old('email') }}">
+            <br>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" required="required">
+                <input class="form-check-input" type="checkbox">
                 <label>
                     Az űrlap használatával Ön tudomásul veszi és elfogadja az <a href="{{route('guest.adatkezeles')}}">Adatkezelési tájékoztatónkat</a></label>
             </div>
@@ -174,17 +198,6 @@
             <button class="btn btn-md btn-primary" style="margin-left: 0; margin-top: 0.6vh; background-color: #3f91ce" name="submit" type="submit" inputmode="text">AJÁNLATKÉRÉS KÜLDÉSE</button>
         </div>
     </form>
-    @if(Session::has('success'))
-         <div class="alert alert-success">
-             {{ Session::get('success') }}
-         </div>
-        @endif
-
-        @if(Session::has('error'))
-            <div class="alert alert-danger">
-                {{ Session::get('error') }}
-            </div>
-        @endif
 </div>
 
 <script>

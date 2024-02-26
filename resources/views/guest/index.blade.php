@@ -1,9 +1,7 @@
 @extends('layouts.guest')
 
-@section('title', 'Dánfok')
-<link rel="stylesheet" href="css/article.css"/>
-
 @section('content')
+<link rel="stylesheet" href="css/article.css"/>
   <div class="loading-overlay" id="loadingOverlay">
     <div class="loader"></div>
   </div>
@@ -62,5 +60,5 @@
           @endforeach
       </section>
       <script src="{{ asset('js/loader.js') }}"></script>
-{{--       <script src="{{ asset('js/navbar.js') }}"></script>
- --}}@endsection
+       <script src="{{ asset('js/navbar.js') }}"></script>
+ @endsection

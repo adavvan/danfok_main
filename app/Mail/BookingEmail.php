@@ -19,13 +19,14 @@ class BookingEmail extends Mailable
     public $start;
     public $end;
     public $szType;
+    public $lszam;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($name, $visitor_email, $tel, $start, $end, $szType)
+    public function __construct($name, $visitor_email, $tel, $start, $end, $szType, $lszam)
     {
         $this->name = $name;
         $this->visitor_email = $visitor_email;
@@ -33,6 +34,7 @@ class BookingEmail extends Mailable
         $this->start = $start;
         $this->end = $end;
         $this->szType = $szType;
+        $this->lszam = $lszam;
     }
 
     /**
@@ -44,6 +46,7 @@ class BookingEmail extends Mailable
     {
         return $this->view('emails.booking')
                     ->subject('Foglalás')
-                    ->from('info@danfok.hu');
+                    ->from('info@danfok.hu')
+                    ->replyTo($this->visitor_email);
     }
 }
