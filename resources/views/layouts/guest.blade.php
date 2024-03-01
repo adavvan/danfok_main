@@ -90,7 +90,7 @@
               </div>
               <div class="footer_icon d-flex align-items-center">
                 <img src="{{ asset('img/footer_icon_email.png') }}">
-                <p>kapcsolat@danfok.hu</p>
+                <p>udulokozpont@gmail.com</p>
               </div>
               <div class="footer_icon d-flex align-items-center">
                 <img src="{{ asset('img/footer_icon_adress.png') }}">

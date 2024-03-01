@@ -25,9 +25,9 @@
             <div class="col-sm d-flex align-items-center mcenter">
                 <img src="img/footer_icon_email.png" class="circle">
                 <div class="kinfo">
-                    <p>kapcsolat@danfok.hu</p>
+                    <p>udulokozpont@gmail.com</p>
                 </div>
-                
+
             </div>
             <div class="col-sm d-flex align-items-center mcenter">
                 <img src="img/footer_icon_adress.png" class="circle">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-</section> 
+</section>
 
 <section class="container-fluid pt-5 pb-5">
     <div class="container">
@@ -68,7 +68,7 @@
                     <div>
                         <textarea name="message" placeholder="Üzenet" rows="5" required="required" class="form-control" cols="50" inputmode="text"></textarea>
                     </div>
-                    
+
                 </div>
                 <div class="btn-wrap text-md-right pt-3">
                     <x-turnstile />
@@ -81,7 +81,7 @@
              {{ Session::get('success') }}
          </div>
         @endif
-        
+
         @if(Session::has('error'))
             <div class="alert alert-danger">
                 {{ Session::get('error') }}
