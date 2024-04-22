@@ -21,7 +21,7 @@
             <tbody>
                 @foreach($articles as $article)
                     <tr>
-                        <td><img src="{{ asset('storage/' . $article->cover_image) }}" alt="Cover Image" style="max-width: 100px;"></td>
+                        <td><img src="{{ asset($article->cover_image) }}" alt="Cover Image" style="max-width: 100px;"></td>
                         <td>{{ $article->title }}</td>
                         <td>{{ $article->articleCategory->name ?? 'Uncategorized' }}</td>
                         <td>{!! substr(strip_tags($article->content), 0, 200) . "..." !!}</td>

@@ -39,7 +39,7 @@
                     <label for="cover_image">Cover Image</label>
                     <input type="file" name="cover_image" id="cover_image" class="form-control-file">
                     @if ($article->cover_image)
-                        <img src="{{ asset('storage/' . $article->cover_image) }}" alt="Cover Image" style="max-width: 200px;">
+                        <img src="{{ asset($article->cover_image) }}" alt="Cover Image" style="max-width: 200px;">
                     @endif
                 </div>
 
