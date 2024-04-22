@@ -69,25 +69,25 @@ class AdminGalleryController extends Controller
             'subcategory_id' => 'required',
             'images.*' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
-    
+
         $images = [];
-    
+
         if ($request->hasFile('images')) {
             foreach ($request->file('images') as $file) {
-                $imagePath = $file->store('images', 'public');
-    
+                $imagePath = $file->store('storage/images', 'public');
+
                 $images[] = [
                     'subcategory_id' => $request->subcategory_id,
                     'image_path' => $imagePath,
                 ];
             }
         }
-    
+
         Image::insert($images);
-    
+
         return redirect()->back()->with('success', 'Images uploaded successfully.');
     }
-    
+
 
     public function destroyImage(Image $image)
     {
