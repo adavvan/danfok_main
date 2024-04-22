@@ -6,40 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
-    name: Build ⛏
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2   
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.2'
-  
-      - name: Cache Composer packages
-        id: composer-cache
-        uses: actions/cache@v2
-        with:
-          path: vendor
-          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-php-
-  
-      - name: Install dependencies
-        run: composer install --prefer-dist --no-progress
-      - name: Setup Node
-        uses: actions/setup-node@v3
-  
-      - name: Install node dependencies
-        uses: bahmutov/npm-install@v1
-  
-      - name: Build project
-        run: npm run build
-
   deploy:
     name: Deploy 🚀
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
