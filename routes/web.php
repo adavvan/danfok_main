@@ -39,10 +39,11 @@ Route::get('/csomagajanlatok/cegeknek', function () { return view('guest.csomago
 Route::get('/adatkezeles', function () { return view('guest.adatkezeles');})->name('guest.adatkezeles');
 
 
-Route::get('/akutalis', [GuestArticleController::class, 'index'])->name('guest.hirek');
-route::get('/akutalis/{hir}', [GuestArticleController::class, 'singleArticle'])->name('guest.hir');
+Route::get('/aktualis', [GuestArticleController::class, 'index'])->name('guest.hirek');
+route::get('/aktualis/{hir}', [GuestArticleController::class, 'singleArticle'])->name('guest.hir');
 
-Auth::routes(['register' => false]);
+Auth::routes(['register' => false, "password.request" => false, "password.reset" => false, "password.update" => false, "password.email" => false]);
+
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::group(['middleware' => ['auth', 'web']], function () {

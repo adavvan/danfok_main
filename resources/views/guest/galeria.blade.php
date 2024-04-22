@@ -37,8 +37,8 @@
             <div class="images gallery justify-content-center">
                 @foreach($images->where('subcategory_id', $subcategory->id) as $image)
                 <div class="magnific-img image">
-                    <a class="image-popup-vertical-fit" href="{{ asset('storage/' . $image->image_path) }}">
-                        <img src="{{ asset('storage/' . $image->image_path) }}" data-gallery="{{ $subcategory->id }}" alt=""/>
+                    <a class="image-popup-vertical-fit" href="{{ '' . $image->image_path) }}">
+                        <img src="{{ asset('' . $image->image_path) }}" data-gallery="{{ $subcategory->id }}" alt=""/>
                     </a>
                 </div>
                 @endforeach

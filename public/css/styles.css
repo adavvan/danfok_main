@@ -423,6 +423,10 @@ input[type="date"] {
     transform: scale(1.05);
 }
 
+.article-c img{
+    max-width: 70vw;
+  }
+
 /* Anims */
 
 .animate-on-scroll {

@@ -31,12 +31,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
+                    @auth
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('admin.gallery') }}">Galéria</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('admin.articles.index') }}">Hírek</a>
                         </li>
+                    @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -49,11 +51,11 @@
                                 </li>
                             @endif
 
-                            @if (Route::has('register'))
+{{--                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
-                            @endif
+                            @endif --}}
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

@@ -3,9 +3,9 @@
 
 @section('content')
 <div class="wrapper pt-20">
-    <div class="container">
-        <h1>{{ $article->title }}</h1>
+    <div class="container article-c">
+        <h1 class="text-center pb-5">{{ $article->title }}</h1>
         {!! $article->content !!}
-    </div>   
+    </div>
 </div>
 @endsection

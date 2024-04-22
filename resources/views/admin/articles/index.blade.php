@@ -24,7 +24,7 @@
                         <td><img src="{{ asset('storage/' . $article->cover_image) }}" alt="Cover Image" style="max-width: 100px;"></td>
                         <td>{{ $article->title }}</td>
                         <td>{{ $article->articleCategory->name ?? 'Uncategorized' }}</td>
-                        <td>{{ strip_tags(substr($article->content, 0, 40)) . "..." }}</td>
+                        <td>{!! substr(strip_tags($article->content), 0, 200) . "..." !!}</td>
                         <td>
                             <a href="{{ route('admin.articles.edit', $article->id) }}" class="btn btn-primary">Edit</a>
                             <form action="{{ route('admin.articles.destroy', $article->id) }}" method="POST" class="d-inline">

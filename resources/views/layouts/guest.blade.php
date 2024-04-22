@@ -40,7 +40,7 @@
                 <a class="nav-link {{ (request()->is('szallasfoglalas')) ? 'active' : '' }}" href="{{ route('guest.szallas') }}">SZÁLLÁSFOGLALÁS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ (request()->is('hirek')) ? 'active' : '' }}" href="{{ route('guest.hirek') }}">AKTUÁLIS</a>
+                <a class="nav-link {{ (request()->is('aktualis')) ? 'active' : '' }}" href="{{ route('guest.hirek') }}">AKTUÁLIS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link {{ (request()->is('galeria')) ? 'active' : '' }}" href="{{ route('guest.galeria') }}">GALÉRIA</a>

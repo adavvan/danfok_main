@@ -12,11 +12,11 @@
         @foreach ($articles as $article)
         <div class="container d-flex justify-content-center">
             <div class="post mb-5 d-flex flex-column flex-md-row flex-lg-row">
-                    <div class="post-img" style="background-image: url({{ asset('storage/' . $article->cover_image) }})">
+                    <div class="post-img" style="background-image: url({{ asset('' . $article->cover_image) }})">
                     </div>
                     <div class="post-body">
                         <h3 class="post-title"><a href="{{ route('guest.hir', $article->id) }}">{{ $article->title }}</a></h3>
-                        <p>{{ strip_tags(substr($article->content, 0, 200)) . "..." }}</p>
+                        <p>{!! substr(strip_tags($article->content), 0, 200) . "..." !!}</p>
                         <span class="post-date">
                             {{$article->created_at}}
                         </span>
